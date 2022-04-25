@@ -36,6 +36,13 @@
 
 ### Modelling the data
 
-##
+## After we have taken a look into the data set we can begin modelling the data. Firstly we can split the data set into train and test data, retaining the churn data as our 'y' data source. As we have such a large number of customers in the data set who are still with SyriaTel we will have a huge imballance in data slanted toward customers staying. To remedy this we will need to use SMOTE to balance the data. from here we can begin to model. At first when modeling the data we went with the K Nearest Neighbors classification system. When using this classification the risk is that it will overfit the model. After running the model with KNN parameters it became clear that this was the case.  After this we saw it fit to switch over to using the Random Forest Classifier. Upon appying this classifier it immediately fit better to the data then the KNN Classifier did. Next we can tune the hyperparameters of the classifier using cross validation and grid search methods. From here we determined the best hyperparameters to use and proceeded with them. This tuned the model even futher and in the below matrix we can see that it fit the data extremely well.
 
+<img width="352" alt="Screen Shot 2022-04-22 at 2 08 09 PM" src="https://user-images.githubusercontent.com/100098968/165176358-2000f294-7538-4591-b39c-c7b5bcd9ec4a.png">
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+### Conclusion 
+
+## With this data set one of the main challenges that we faced was the issue of imbalance between churn and retention data. To be able to better target those who are at risk of leaving SyriaTel it would be beneficial to have access to more data related to those that churned from the company. As well it would help to be able to identify the reason why they have decided to no longer use SyriaTel, identifying those who have left for competitors would give us a necessary insight into refining further, and more accurately predicting, those who are at risk of churn. Irregardless of these lackings the model will be able to greatly help in anticipating those who are are at risk of churn and will allow SyriaTel to reach out to them with the hope of keepingn their business. 
 
